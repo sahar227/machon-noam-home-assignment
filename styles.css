@@ -82,7 +82,14 @@ footer {
   background-color: #323232;
   color: #c6c4c4;
   text-align: end;
-  padding: 0.5rem;
+  padding: 2rem 0.5rem;
+  position: relative;
+}
+
+#footer-decoration {
+  position: absolute;
+  right: 12px;
+  top: -24px;
 }
 
 .footer-content,
