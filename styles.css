@@ -1,3 +1,5 @@
+/* General styles */
+
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +12,72 @@ body {
   height: 100vh;
 }
 
+/* Header styles */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0.6rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.22);
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo > p {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+header > nav {
+  position: absolute;
+  right: 0rem;
+}
+
+.nav-links {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+
+  header > nav {
+    position: relative;
+    right: 0rem;
+  }
+
+  header > nav > svg {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-links > li {
+    display: block;
+    border-right: 1px solid rgba(0, 0, 0, 0.22);
+    padding: 1rem 2rem;
+  }
+
+  .nav-links > li > a {
+    display: flex;
+    width: 120%;
+    justify-content: space-between;
+    text-decoration: none;
+    color: grey;
+  }
+}
+
+/* Content styles */
 .content-container {
   flex: 1;
 }
