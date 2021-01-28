@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  direction: rtl;
 }
 
 /* Header styles */
@@ -44,7 +45,6 @@ header > nav {
 
 @media screen and (min-width: 600px) {
   header {
-    flex-flow: row-reverse;
     justify-content: space-between;
     padding: 0 3rem;
   }
@@ -76,7 +76,6 @@ header > nav {
 footer {
   background-color: #323232;
   color: #c6c4c4;
-  text-align: end;
   padding: 2rem 0.5rem;
   position: relative;
 }
@@ -131,7 +130,6 @@ footer {
   }
   .footer-content {
     flex-direction: row;
-    flex-flow: row-reverse;
     justify-content: space-around;
   }
   .footer-about {
@@ -147,7 +145,6 @@ footer {
   }
   .footer-links {
     display: flex;
-    flex-flow: row-reverse;
     justify-content: space-between;
     margin: 0 3rem;
   }
@@ -172,4 +169,31 @@ footer {
 /* Content styles */
 .content-container {
   flex: 1;
+  margin-bottom: 2.5rem;
+}
+.content-top-scetion {
+  padding: 1rem;
+  padding-bottom: 0;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #323232;
+}
+
+.tests-summary {
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.test-summary {
+  margin: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.test-summary.selected {
+  border-bottom: 3px solid #257598;
+  font-size: 1.6rem;
 }
