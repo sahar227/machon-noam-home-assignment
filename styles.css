@@ -181,7 +181,6 @@ footer {
 .tests-summary {
   display: flex;
   overflow: hidden;
-  margin: auto;
   margin-top: 1rem;
 }
 
@@ -191,9 +190,33 @@ footer {
   flex-direction: column;
   align-items: center;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .test-summary.selected {
   border-bottom: 3px solid #257598;
   font-size: 1.6rem;
+}
+
+.check-icon {
+  display: block;
+  font-size: 48px;
+}
+
+@media screen and (min-width: 600px) {
+  .content-top-scetion {
+    padding-right: 10rem;
+  }
+  .tests-summary {
+    width: 85%;
+  }
+  .test-summary.selected {
+    font-size: 1.2rem;
+  }
+  .test-summary {
+    font-size: 1rem;
+  }
+  .check-icon {
+    font-size: 32px;
+  }
 }
