@@ -115,6 +115,11 @@ footer {
   align-items: center;
 }
 
+.social-platforms {
+  border-bottom: 2px solid grey;
+  margin: 0.5rem;
+}
+
 /* Content styles */
 .content-container {
   flex: 1;
