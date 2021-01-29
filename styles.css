@@ -30,6 +30,7 @@ header {
 
 .logo > p {
   margin-right: 1rem;
+  margin-bottom: 0;
   font-size: 1.2rem;
   color: grey;
 }
@@ -57,6 +58,7 @@ header > nav {
   }
   .nav-links {
     display: flex;
+    margin-bottom: 0;
   }
   .nav-links > li {
     display: block;
@@ -122,6 +124,10 @@ footer {
 .social-platforms {
   border-bottom: 2px solid grey;
   margin: 0.5rem;
+}
+
+.social-platforms > a {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 600px) {
