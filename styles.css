@@ -255,6 +255,34 @@ footer {
   border-bottom: none;
 }
 
+.test-group-title {
+  display: flex;
+}
+.test-group-title-description {
+  margin-right: 1rem;
+  position: relative;
+}
+.test-group-title h2 {
+  font-size: 1.2rem;
+}
+
+.test-groups {
+  padding: 0;
+  list-style: none;
+}
+
+.arrow {
+  font-size: 48px;
+  position: absolute;
+  left: 2rem;
+}
+
+.divider {
+  border-bottom: 1px solid #afaeae;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
 @media screen and (min-width: 600px) {
   .content-top-scetion {
     padding-right: 10rem;
