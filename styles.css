@@ -260,7 +260,6 @@ footer {
 }
 .test-group-title-description {
   margin-right: 1rem;
-  position: relative;
 }
 .test-group-title h2 {
   font-size: 1.2rem;
@@ -290,6 +289,10 @@ footer {
 .test-more-info {
   color: #257598;
   cursor: pointer;
+}
+
+.test-group-title {
+  position: relative;
 }
 
 .arrow {
@@ -335,7 +338,7 @@ footer {
   .content {
     display: flex;
     justify-content: center;
-    padding: 0 10rem;
+    padding: 0 5rem;
     margin-top: 2rem;
   }
   .content-main {
@@ -347,5 +350,40 @@ footer {
   }
   .content-side {
     flex: 1;
+  }
+  .tests-in-section > h3.divider {
+    border-bottom: none;
+  }
+  .test-group-title-description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .tests {
+    padding-right: 2rem;
+  }
+  .test-title-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .test-title-content > div {
+    margin-left: 1rem;
+  }
+  .test-title-content > button {
+    width: 10rem;
+  }
+  .test-additional-data {
+    margin-left: 2rem;
+  }
+  .arrow {
+    /* right: 12rem; */
+    position: static;
+    margin-right: 0.5rem;
+  }
+  .test-group-title-description-main {
+    display: flex;
+    align-items: center;
   }
 }
