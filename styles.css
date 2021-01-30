@@ -233,7 +233,7 @@ footer {
   border: none;
 }
 
-.next-practice > .btn {
+.btn {
   width: 100%;
 }
 
@@ -266,9 +266,30 @@ footer {
   font-size: 1.2rem;
 }
 
-.test-groups {
+.test-groups,
+.tests {
   padding: 0;
   list-style: none;
+}
+
+.test-title {
+  display: flex;
+}
+.test-title-content {
+  margin-right: 1rem;
+  width: 80%;
+}
+.test-additional-data-container {
+  display: flex;
+  justify-content: space-between;
+}
+.test-additional-data {
+  display: flex;
+}
+
+.test-more-info {
+  color: #257598;
+  cursor: pointer;
 }
 
 .arrow {
@@ -281,6 +302,12 @@ footer {
   border-bottom: 1px solid #afaeae;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+}
+
+.divider-vertical {
+  border-left: 1px solid #afaeae;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {
