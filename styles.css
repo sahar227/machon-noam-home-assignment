@@ -268,6 +268,8 @@ footer {
 .test-groups,
 .tests {
   padding: 0;
+}
+ul {
   list-style: none;
 }
 
@@ -311,6 +313,26 @@ footer {
   border-left: 1px solid #afaeae;
   padding-left: 0.5rem;
   margin-left: 0.5rem;
+}
+
+.test {
+  cursor: pointer;
+}
+
+.tests-detailed {
+  padding-left: 0;
+  display: none;
+}
+
+.test-details {
+  padding-right: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+}
+.test-details-info {
+  display: flex;
 }
 
 @media screen and (min-width: 600px) {
@@ -385,5 +407,20 @@ footer {
   .test-group-title-description-main {
     display: flex;
     align-items: center;
+  }
+  .test-details p {
+    margin-bottom: 0;
+  }
+  .test-details-info {
+    width: 50%;
+  }
+  .test-details-full {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  .progress {
+    margin: 0 1.5rem;
+    width: 100%;
   }
 }
